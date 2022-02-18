@@ -1,4 +1,3 @@
-from distutils.command.clean import clean
 from consoleClearner import cleanConsole
 
 # Lista de numeros primos (Ejercicio 2)
