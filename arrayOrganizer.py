@@ -1,6 +1,6 @@
 from consoleClearner import cleanConsole
 
-# Organizador de arreglos (Ejercicio 8)
+# Organizador de arreglos (Ejercicio 5)
 def arrayOrganizer():
     while True: 
         cleanConsole()
