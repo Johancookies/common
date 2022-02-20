@@ -1,4 +1,3 @@
-from operator import index
 from consoleClearner import cleanConsole
 
 # Serie Fibonacci (Ejercicio 7)
