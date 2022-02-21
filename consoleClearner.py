@@ -1,7 +1,7 @@
 import os
 import platform
-command = "clear" if platform.system() == "Linux" else "cls"
+command = "cls" if platform.system() == "Windows" else "clear"
 clear = lambda: os.system(command)
 
-def cleanConsole():
+def clearConsole(): #Limpia la consola
     return clear()

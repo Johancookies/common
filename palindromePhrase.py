@@ -1,19 +1,19 @@
-from consoleClearner import cleanConsole
+from consoleClearner import clearConsole
 
 # Frases palindromas (Ejercicio 3)
 def palindromePhrase():
     invertedPhrase = "" 
-    while True: 
-        cleanConsole() # Limpia consola
+    while True: # Invierte la palabra
+        clearConsole()
         print("Frase palindroma (Ejercicio 3)\n")
         phrase = input("Digite una frase => ")
         if len(phrase) > 0:
             currentPosition = len(phrase) - 1 
-            for character in range(len(phrase)): # Invierte la frase inicial
+            for character in range(len(phrase)): 
                 character = phrase[currentPosition]
                 invertedPhrase += character
                 currentPosition -= 1
-            if phrase == invertedPhrase:
+            if phrase == invertedPhrase: # Verifica que la palabra nueva sea igual a la inicial
                 print("Su frase es palindroma!")
             else:
                 print("Su frase no es palindroma")
@@ -22,5 +22,4 @@ def palindromePhrase():
             input("\n\nPresiona enter para continuar...")
             break
 
-# Si el ejercicio es ejecutado independientemente
 palindromePhrase()
